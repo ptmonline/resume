@@ -1,0 +1,218 @@
+{
+	"basics": {
+		"name": "Pau Torres",
+		"label": "Senior Front End Developer",
+		"picture": "",
+		"email": "ptorresonline@gmail.com",
+		"phone": "(34) 637 664 340",
+		"summary": "I am a senior front end developer with 7 years of experience with strong client-side, agency & production company experience. I am a fast learner and very passionate about my work, motivated, resourceful and always looking to learn new and open source technologies and improve my professional career.",
+		"location": {
+			"address": "Digoine 32",
+			"postalCode": "08901",
+			"city": "L'Hospitalet de Llobregat",
+			"countryCode": "Barcelona",
+			"region": "Catalunya"
+		},
+		"placeOfBird": "Barcelona",
+		"stateOfBird": "Catalunya",
+		"dateOfBird": "XXXX",
+		"profiles": [{
+			"network": "Github",
+			"username": "ptmonline",
+			"url": "http://github.com/ptmonline"
+		}, {
+			"network": "Twitter",
+			"username": "pau torres",
+			"url": "http://twitter.com/nullarchitect"
+		}, {
+			"network": "LinkedIn",
+			"username": "pau torres",
+			"url": "https://www.linkedin.com/in/pau-torres-0109853b"
+		}]
+	},
+	"work": [{
+		"company": "Costaisa",
+		"location": {
+			"city": "Barcelona",
+			"countryCode": "CA",
+			"region": "Spain"
+		},
+		"position": "Senior Front End Developer",
+		"website": "http://www.costaisa.com",
+		"startDate": "June 2016",
+		"highlights": [
+			"Development of hybrid mobile apps with Angular 2.",
+      "Data visualisation of realtime data with D3.",
+      "Development, troubleshooting and addressing browser compatibility issues for various responsives sites."
+		],
+		"toolsandtech": "Ionic 2, Angular 2, Typescript, Gulp, Sass, BEM"
+	}, {
+		"company": "Klick Health",
+		"location": {
+			"city": "Toronto",
+			"countryCode": "ON",
+			"region": "Canada"
+		},
+		"position": "Full Stack Developer",
+		"website": "http://klick.com",
+		"startDate": "October 2014",
+		"endDate": "November 2015",
+		"highlights": [
+			"Development and architecture of Veeva iRep apps for iPad and Windows 8 tablet for various clients. Also worked  on Veeva Approved Emails.",
+			"Created the 'Keymap Generator', a small Nodejs tool to convert JSON files into Excel documents used to create Key Messages Map for Veeva apps.",
+			"Development, troubleshooting and addressing browser compatibility issues for various responsives sites (ampyra.com, nesinafamily.com, entyvio.com, contrave.com).",
+			"Building and development of rich media html5 banners."
+		],
+		"toolsandtech": "html5, css3, javascript, jQuery, D3.js, Node.js, Grunt, Less, Express.js, Ruby, Bower, Hammer.js, Socket.IO,  Underscore.js. Bootstrap, Sass, compass, Google Web Designer API"
+	}, {
+		"company": "Klick Health",
+		"location": {
+			"city": "Toronto",
+			"countryCode": "ON",
+			"region": "Canada"
+		},
+		"position": "Senior Front End Developer / Team Lead",
+		"website": "http://klick.com",
+		"startDate": "June 2013",
+		"endDate": "October 2014",
+		"highlights": [
+			"Team lead in charge of junior developers, new hires and interns.",
+			"Angular.js developer for Telus mobile app and Biogen website.",
+			"Development and prototyping of data animations and infographics for apps, mobile and desktop websites.",
+			"Front end developement and supervising for sonyrewards.com."
+		],
+		"toolsandtech": "Angular.js, Foundation, html5, css3, D3.js, Node.js, DevExtreme and Greensock API, jQuery, Bootstrap"
+	}, {
+		"company": "Klick Health",
+		"location": {
+			"city": "Toronto",
+			"countryCode": "ON",
+			"region": "Canada"
+		},
+		"position": "Front End Developer",
+		"website": "http://klick.com",
+		"startDate": "October 2011",
+		"endDate": "June 2013",
+		"highlights": [
+			"Front end development, testing and QA response for desktop and mobile sites millennium.com, ampyra-hcp.com, epipen.ca, breakingthroughpain.com, takedaoncology.com, takedahcp.",
+			"Created, supervised and responded to quality assurance department on the development of HTML Emails."
+		],
+		"toolsandtech": "html5, css3, javascript, jQuery, Foundation, Wordpress, PHP"
+	}, {
+		"company": "The Null Architect",
+		"location": {
+			"city": "Toronto",
+			"countryCode": "ON",
+			"region": "Canada"
+		},
+		"position": "Front End Developer",
+		"website": "not available at this time",
+		"startDate": "September 2010",
+		"endDate": "March 2012",
+		"highlights": [
+			"Development and architecture of various sites for Art centers, musicians and record labels"
+		],
+		"toolsandtech": "html5, css3, javascript, jQuery, PHP, MySQL"
+	}],
+	"education": [{
+		"institution": "Ryerson Univerity",
+		"area": "Web Development",
+		"studyType": "Certificate",
+		"startDate": "2010-09-15",
+		"endDate": "2011-06-07",
+		"courses": [
+			"Advanced Javascript",
+			"HTML5/CSS3",
+			"PHP/MySQL"
+		]
+	}, {
+		"institution": "George Brown",
+		"area": "Web Publishing",
+		"studyType": "Certificate",
+		"startDate": "2009-09-15",
+		"endDate": "2010-10-11",
+		"courses": [
+			"Internet Publiching",
+			"HTML/CSS",
+			"Javascript",
+			"Photoshop"
+		]
+	}],
+	"awards": [{
+		"title": "Website Features - User Experience",
+		"date": "2015-01-01",
+		"awarder": "Klick Health",
+		"summary": "ENTYVIO US Consumer Site"
+	}, {
+		"title": "Outstanding Achievement in web development",
+		"date": "2012-01-01",
+		"awarder": "Klick Health",
+		"summary": "Webaward for Breaking Through Pain website"
+	}],
+	"skills": [{
+		"name": "Work",
+		"level": "",
+		"keywords": [
+			"HTML/HTML5",
+			"CSS/CSS3",
+			"Javascript",
+      "Angular 2",
+      "Typescript",
+			"jQuery",
+      "D3",
+			"Sass, Less",
+			"Gulp, Grunt",
+      "GIT, Tortoise",
+      "BEM Methodology"
+		]
+	}, {
+		"name": "Personal",
+		"level": "",
+		"keywords": [
+			"Node",
+			"Express",
+			"Babel",
+			"SQL (MySQL, PostgreSQL)",
+			"NoSQL (MongoDb, Redis)",
+			"Underscore"
+		]
+	}],
+	"languages": [{
+		"language": "Spanish",
+		"fluency": "Native speaker"
+	}, {
+		"language": "Catalan",
+		"fluency": "Native speaker"
+	}, {
+		"language": "English",
+		"fluency": "Full professional proficiency"
+	}, {
+		"language": "French",
+		"fluency": "Full professional proficiency"
+	}],
+	"interests": [{
+		"name": "Music",
+		"keywords": [
+			"Vinyls",
+			"Record Stores"
+		]
+	}, {
+		"name": "Free Internet / Online Privacy",
+		"keywords": [
+			"Open Source",
+			"Electronic Frontier Foundation",
+			"GNU/Linux",
+			"PGP"
+		]
+	}],
+	"references": [{
+		"name": "Drew Ashby (Technology Director, Klick Health) / dashby@klick.com",
+		"reference": "In terms of performance, Pau is unparalleled.  His work is always of the highest quality and the successful outcome of any project is his pride and his priority.  His technical skills are very strong and diverse as demonstrated by his ability to succeed in a variety of digital technologies including websites (responsive, mobile or otherwise), development and consumption of web services, emails, ad units and a small host of proprietary technologies such as the Veeva platform that he learned and mastered.  Pau is a fluent communicator who is able to work with different teams from different backgrounds and disciplines easily."
+	}, {
+		"name": "Mark Donaldson (Sr. Web Developer, Klick Health) / mdonaldson@klick.com",
+		"reference": "Pau was a valuable asset to Klick Health and rapidly gained a reputation as an individual who could quickly grasp new projects and new frameworks producing quality websites and other digital assets often quicker than was expected. Pau's organization skills combined with his ability to understand all aspects of the project at hand meant that during the production phase, multiple departments knew they could rely on his expertise and judgement. In that regard, Pau was a key to the success of the endeavor."
+	}, {
+		"name": "Simon Withers (Vice President, Technology, Klick Health) / swithers@klick.com",
+		"reference": "Pau excels as both a member of a development team, and taking initiative himself, and has demonstrated both multiple times. He will do what is necessary to drive a project to completion, and is not afraid to identify areas where better process or improved or altered practice would better serve his colleagues, clients or employer."
+	}]
+}
