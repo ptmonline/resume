@@ -1,688 +1,630 @@
 <!doctype html>
 <html>
-
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-		<title>Pau Torres</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="style.css">
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Pau Torres</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
 	</head>
-
 	<body>
-		<div id="resume">
-				<header id="header" class="clear">
-						<div>
-							<h1 class="name">Pau Torres</h1>
-							<h2 class="label">Senior Front End Developer</h2>
-						</div>
-
-						<span class="location">
-								<span class="address">
-									Digoine 32,
-								</span>
-								<span class="postalCode">
-									08901,
-								</span>
-								<span class="city">
-									L&#x27;Hospitalet de Llobregat,
-								</span>
-								<span class="region">
-									Catalunya
-								</span>
-								<span class="countryCode">
-									Barcelona
-								</span>
-						</span>
-
-                    <!-- <div>born in Barcelona, Catalunya in XXXX</div> -->
-
-
-					<div id="contact">
-						<div class="email">
-              <span class="fa fa-envelope-o"></span>
-							<a href="mailto:ptorresonline@gmail.com">ptorresonline@gmail.com</a>
-						</div>
-						<div class="phone">
-              <span class="fa fa-mobile"></span>
-							(34) 637 664 340
-						</div>
-					</div>
-
-					<div id="profiles">
-						<div class="item">
-								<div class="username">
-									<span class="fa fa-github github social"></span>
-									<span class="url">
-										<a href="http://github.com/ptmonline">ptmonline</a>
-									</span>
-								</div>
-						</div>
-						<div class="item">
-								<div class="username">
-									<span class="fa fa-twitter twitter social"></span>
-									<span class="url">
-										<a href="http://twitter.com/nullarchitect">pau torres</a>
-									</span>
-								</div>
-						</div>
-						<div class="item">
-								<div class="username">
-									<span class="fa fa-linkedin linkedin social"></span>
-									<span class="url">
-										<a href="https://www.linkedin.com/in/pau-torres-0109853b">pau torres</a>
-									</span>
-								</div>
-						</div>
-					</div>
-				</header>
-
-					<section class="section main-summary">
-						<section>
-							<div><p>I am a senior front end developer with 7 years of experience with strong client-side, agency & production company experience. I am a fast learner and very passionate about my work, motivated, resourceful and always looking to learn new and open source technologies and improve my professional career.</p></div>
-						</section>
-					</section>
-
-				<section class="section margin1">
-					<header>
-						<h2 class='section-title'>Skills</h2>
-					</header>
-					<section id="skills">
-						<div class="item">
-							<h3 class="name">
-								Work
-							</h3>
-							<ul class="keywords">
-								<li>HTML/HTML5</li>
-								<li>CSS/CSS3</li>
-								<li>Javascript</li>
-								<li>Angular 2</li>
-								<li>Typescript</li>
-								<li>jQuery</li>
-								<li>D3</li>
-								<li>Sass, Less</li>
-								<li>Gulp, Grunt</li>
-								<li>GIT, Tortoise</li>
-								<li>BEM Methodology</li>
-							</ul>
-						</div>
-						<div class="item">
-							<h3 class="name">
-								Personal
-							</h3>
-							<ul class="keywords">
-								<li>Node</li>
-								<li>Express</li>
-								<li>Babel</li>
-								<li>SQL (MySQL, PostgreSQL)</li>
-								<li>NoSQL (MongoDb, Redis)</li>
-								<li>Underscore</li>
-							</ul>
-						</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Work Experience <span class="item-count">(5)</span></h2>
-					</header>
-					<section id="work">
-								<header>
-									<span class="space-left">
-
-											<span class="fa fa-caret-down"></span>
-
-									</span>
-									<div class="position">
-										Senior Front End Developer
-									</div>
-									<div class="company">
-										Costaisa
-									</div>
-									<div class="date">
-										<span class="startDate">
-											June 2016
-										</span>
-										<span class="endDate">
-											- Current
-										</span>
-									</div>
-								</header>
-
-                                <span class="location">
-                                    <span class="fa fa-map-marker"></span>
-                                    <span class="city">
-                                        Barcelona,
-                                    </span>
-                                    <span class="countryCode">
-                                        (CA)
-                                    </span>
-                                    <span class="region">
-                                      Spain
-                                    </span>
-                                </span>
-                                <span class="website">
-                                    <a href="http://www.costaisa.com">http://www.costaisa.com</a>
-                                </span>
-
-
-
-								<div class="item display" style="opacity:1">
-
-									<ul class="highlights">
-											<li>Development of hybrid mobile apps with Angular 2.</li>
-											<li>Data visualisation of realtime data with D3.</li>
-											<li>Development, troubleshooting and addressing browser compatibility issues for various responsives sites.</li>
-									</ul>
-
-							</div>
-							<div class="tech">
-								<p class="tote">Tools and Technologies used: <span>Ionic 2, Angular 2, Typescript, Gulp, Sass, BEM, D3, Bootstrap Grid</span></p>
-							</div>
-								<header>
-									<span class="space-left">
-
-											<span class="fa fa-caret-down"></span>
-
-									</span>
-									<div class="position">
-										Full Stack Developer
-									</div>
-									<div class="company">
-										Klick Health
-									</div>
-									<div class="date">
-										<span class="startDate">
-											October 2014
-										</span>
-										<span class="endDate">
-											- March 2016
-										</span>
-									</div>
-								</header>
-
-                                <span class="location">
-                                    <span class="fa fa-map-marker"></span>
-                                    <span class="city">
-                                        Toronto,
-                                    </span>
-                                    <span class="countryCode">
-                                        (ON)
-                                    </span>
-                                    <span class="region">
-                                      Canada
-                                    </span>
-                                </span>
-                                <span class="website">
-                                    <a href="http://klick.com">http://klick.com</a>
-                                </span>
-
-
-
-								<div class="item display" style="opacity:1">
-
-									<ul class="highlights">
-											<li>Development and architecture of Veeva iRep apps for iPad and Windows 8 tablet for various clients. Also worked  on Veeva Approved Emails.</li>
-											<li>Created the &#x27;Keymap Generator&#x27;, a small Nodejs tool to convert JSON files into Excel documents used to create Key Messages Map for Veeva apps.</li>
-											<li>Development, troubleshooting and addressing browser compatibility issues for various responsives sites (ampyra.com, nesinafamily.com, entyvio.com, contrave.com).</li>
-											<li>Building and development of rich media html5 banners.</li>
-									</ul>
-
-							</div>
-							<div class="tech">
-								<p class="tote">Tools and Technologies used: <span>html5, css3, javascript, jQuery, D3.js, Node.js, Grunt, Less, Express.js, Ruby, Bower, Hammer.js, Socket.IO,  Underscore.js. Bootstrap, Sass, compass, Google Web Designer API</span></p>
-							</div>
-								<header>
-									<span class="space-left">
-
-											<span class="fa fa-caret-down"></span>
-
-									</span>
-									<div class="position">
-										Senior Front End Developer / Team Lead
-									</div>
-									<div class="company">
-										Klick Health
-									</div>
-									<div class="date">
-										<span class="startDate">
-											June 2013
-										</span>
-										<span class="endDate">
-											- October 2014
-										</span>
-									</div>
-								</header>
-
-                                <span class="location">
-                                    <span class="fa fa-map-marker"></span>
-                                    <span class="city">
-                                        Toronto,
-                                    </span>
-                                    <span class="countryCode">
-                                        (ON)
-                                    </span>
-                                    <span class="region">
-                                      Canada
-                                    </span>
-                                </span>
-                                <span class="website">
-                                    <a href="http://klick.com">http://klick.com</a>
-                                </span>
-
-
-
-								<div class="item display" style="opacity:1">
-
-									<ul class="highlights">
-											<li>Team lead in charge of junior developers, new hires and interns.</li>
-											<li>Angular.js developer for Telus mobile app and Biogen website.</li>
-											<li>Development and prototyping of data animations and infographics for apps, mobile and desktop websites.</li>
-											<li>Front end developement and supervising for sonyrewards.com.</li>
-									</ul>
-
-							</div>
-							<div class="tech">
-								<p class="tote">Tools and Technologies used: <span>Angular.js, Foundation, html5, css3, D3.js, Node.js, DevExtreme and Greensock API, jQuery, Bootstrap</span></p>
-							</div>
-								<header>
-									<span class="space-left">
-
-											<span class="fa fa-caret-down"></span>
-
-									</span>
-									<div class="position">
-										Front End Developer
-									</div>
-									<div class="company">
-										Klick Health
-									</div>
-									<div class="date">
-										<span class="startDate">
-											October 2011
-										</span>
-										<span class="endDate">
-											- June 2013
-										</span>
-									</div>
-								</header>
-
-                                <span class="location">
-                                    <span class="fa fa-map-marker"></span>
-                                    <span class="city">
-                                        Toronto,
-                                    </span>
-                                    <span class="countryCode">
-                                        (ON)
-                                    </span>
-                                    <span class="region">
-                                      Canada
-                                    </span>
-                                </span>
-                                <span class="website">
-                                    <a href="http://klick.com">http://klick.com</a>
-                                </span>
-
-
-
-								<div class="item display" style="opacity:1">
-
-									<ul class="highlights">
-											<li>Front end development, testing and QA response for desktop and mobile sites millennium.com, ampyra-hcp.com, epipen.ca, breakingthroughpain.com, takedaoncology.com, takedahcp.</li>
-											<li>Created, supervised and responded to quality assurance department on the development of HTML Emails.</li>
-									</ul>
-
-							</div>
-							<div class="tech">
-								<p class="tote">Tools and Technologies used: <span>html5, css3, javascript, jQuery, Foundation, Wordpress, PHP</span></p>
-							</div>
-								<header>
-									<span class="space-left">
-
-											<span class="fa fa-caret-down"></span>
-
-									</span>
-									<div class="position">
-										Front End Developer
-									</div>
-									<div class="company">
-										The Null Architect
-									</div>
-									<div class="date">
-										<span class="startDate">
-											September 2010
-										</span>
-										<span class="endDate">
-											- March 2012
-										</span>
-									</div>
-								</header>
-
-                                <span class="location">
-                                    <span class="fa fa-map-marker"></span>
-                                    <span class="city">
-                                        Toronto,
-                                    </span>
-                                    <span class="countryCode">
-                                        (ON)
-                                    </span>
-                                    <span class="region">
-                                      Canada
-                                    </span>
-                                </span>
-                                <span class="website">
-                                    <a href="not available at this time">not available at this time</a>
-                                </span>
-
-
-
-								<div class="item display" style="opacity:1">
-
-									<ul class="highlights">
-											<li>Development and architecture of various sites for Art centers, musicians and record labels</li>
-									</ul>
-
-							</div>
-							<div class="tech">
-								<p class="tote">Tools and Technologies used: <span>html5, css3, javascript, jQuery, PHP, MySQL</span></p>
-							</div>
-					</section>
-				</section>
-
-
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
-					</header>
-					<section id="education">
-							<header class="clear">
-								<span class="space-left">
-										<span class="fa fa-caret-down"></span>
-								</span>
-								<div class="header-left">
-										<div class="studyType">
-											Certificate
-										</div>
-										<div class="area">
-											Web Development
-										</div>
-										<div class="institution">
-											Ryerson Univerity
-										</div>
-								</div>
-								<div class="date">
-									<span class="startDate">
-										2010
-									</span>
-									<span class="endDate">
-										- 2011
-									</span>
-								</div>
-							</header>
-
-
-                <ul class="courses">
-                    <li>Advanced Javascript</li>
-                    <li>HTML5/CSS3</li>
-                    <li>PHP/MySQL</li>
-                </ul>
-
-								<div class="item display" style="opacity:1">
-							</div>
-							<header class="clear">
-								<span class="space-left">
-										<span class="fa fa-caret-right"></span>
-								</span>
-								<div class="header-left">
-										<div class="studyType">
-											Certificate
-										</div>
-										<div class="area">
-											Web Publishing
-										</div>
-										<div class="institution">
-											George Brown
-										</div>
-								</div>
-								<div class="date">
-									<span class="startDate">
-										2009
-									</span>
-									<span class="endDate">
-										- 2010
-									</span>
-								</div>
-							</header>
-
-
-                <ul class="courses">
-                    <li>Internet Publiching</li>
-                    <li>HTML/CSS</li>
-                    <li>Javascript</li>
-                    <li>Photoshop</li>
-                </ul>
-
-								<div class="item display none" style="opacity:0">
-							</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Awards</h2>
-					</header>
-					<section id="awards">
-						<header class="clear">
-							<span class="space-left">
-									<span class="fa fa-caret-down"></span>
-							</span>
-							<div class="header-left">
-									<div class="title">
-										Website Features - User Experience
-									</div>
-									<div class="awarder">
-										Klick Health
-									</div>
-							</div>
-								<div class="date">
-									2015
-								</div>
-						</header>
-							<div class="item display" style="opacity:1">
-								<div class="summary">
-									<p>ENTYVIO US Consumer Site</p>
-								</div>
-						</div>
-						<header class="clear">
-							<span class="space-left">
-									<span class="fa fa-caret-right"></span>
-							</span>
-							<div class="header-left">
-									<div class="title">
-										Outstanding Achievement in web development
-									</div>
-									<div class="awarder">
-										Klick Health
-									</div>
-							</div>
-								<div class="date">
-									2012
-								</div>
-						</header>
-							<div class="item display none" style="opacity:0">
-								<div class="summary">
-									<p>Webaward for Breaking Through Pain website</p>
-								</div>
-						</div>
-					</section>
-				</section>
-
-
-				<section class="section margin1">
-					<header>
-						<h2 class='section-title'>Languages</h2>
-					</header>
-					<section id="languages">
-							<div class="display">
-										<h3 class="language">
-											Spanish
-										</h3>
-								<div class="item">
-										<div class="level fluency native speaker">
-											<em>Native speaker</em>
-											<div class="bar"></div>
-										</div>
-								</div>
-							</div>
-							<div class="display">
-										<h3 class="language">
-											Catalan
-										</h3>
-								<div class="item">
-										<div class="level fluency native speaker">
-											<em>Native speaker</em>
-											<div class="bar"></div>
-										</div>
-								</div>
-							</div>
-							<div class="display">
-										<h3 class="language">
-											English
-										</h3>
-								<div class="item">
-										<div class="level fluency full professional proficiency">
-											<em>Full professional proficiency</em>
-											<div class="bar"></div>
-										</div>
-								</div>
-							</div>
-							<div class="display">
-										<h3 class="language">
-											French
-										</h3>
-								<div class="item">
-										<div class="level fluency full professional proficiency">
-											<em>Full professional proficiency</em>
-											<div class="bar"></div>
-										</div>
-								</div>
-							</div>
-					</section>
-				</section>
-
-				<section class="section margin1">
-					<header>
-						<h2 class='section-title' class='section-title'>Interests</h2>
-					</header>
-					<section id="interests">
-							<div class="item">
-									<h3 class="name">
-										Music
-									</h3>
-									<ul class="keywords">
-											<li>Vinyls</li>
-											<li>Record Stores</li>
-									</ul>
-								<div class="summary">
-									<p></p>
-								</div>
-							</div>
-							<div class="item">
-									<h3 class="name">
-										Free Internet / Online Privacy
-									</h3>
-									<ul class="keywords">
-											<li>Open Source</li>
-											<li>Electronic Frontier Foundation</li>
-											<li>GNU/Linux</li>
-											<li>PGP</li>
-									</ul>
-								<div class="summary">
-									<p></p>
-								</div>
-							</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<header>
-						<h2 class='section-title'>References</h2>
-					</header>
-					<section id="references">
-						<div class="item">
-							<blockquote class="reference">
-								&#8220;&#32;In terms of performance, Pau is unparalleled.  His work is always of the highest quality and the successful outcome of any project is his pride and his priority.  His technical skills are very strong and diverse as demonstrated by his ability to succeed in a variety of digital technologies including websites (responsive, mobile or otherwise), development and consumption of web services, emails, ad units and a small host of proprietary technologies such as the Veeva platform that he learned and mastered.  Pau is a fluent communicator who is able to work with different teams from different backgrounds and disciplines easily.&#32;&#8221;
-							</blockquote>
-							<div class="name">
-								Drew Ashby (Technology Director, Klick Health) / dashby@klick.com
-							</div>
-						</div>
-						<div class="item">
-							<blockquote class="reference">
-								&#8220;&#32;Pau was a valuable asset to Klick Health and rapidly gained a reputation as an individual who could quickly grasp new projects and new frameworks producing quality websites and other digital assets often quicker than was expected. Pau&#x27;s organization skills combined with his ability to understand all aspects of the project at hand meant that during the production phase, multiple departments knew they could rely on his expertise and judgement. In that regard, Pau was a key to the success of the endeavor.&#32;&#8221;
-							</blockquote>
-							<div class="name">
-								Mark Donaldson (Sr. Web Developer, Klick Health) / mdonaldson@klick.com
-							</div>
-						</div>
-						<div class="item">
-							<blockquote class="reference">
-								&#8220;&#32;Pau excels as both a member of a development team, and taking initiative himself, and has demonstrated both multiple times. He will do what is necessary to drive a project to completion, and is not afraid to identify areas where better process or improved or altered practice would better serve his colleagues, clients or employer.&#32;&#8221;
-							</blockquote>
-							<div class="name">
-								Simon Withers (Vice President, Technology, Klick Health) / swithers@klick.com
-							</div>
-						</div>
-					</section>
-				</section>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Pau Torres
+					</h1>
+					<h2>
+						Senior Front End Developer
+					</h2>
+				</div>
+			</div>
 		</div>
-		<script>
-			(function(){
-				var elements = document.querySelector("#resume");
+	</header>
+	<div id="content" class="container">
 
-				// adding the element to the all container
-				// and using event delegation
-				elements.addEventListener("click", function(e) {
-					var current = e.target;
-					// font awesone arrows
-					var arrowRight = current.classList.contains('fa-caret-right');
-					var arrowDown = current.classList.contains('fa-caret-down');
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">ptorresonline@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(34) 637 664 340</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>I am a senior front end developer with 7 years of experience with strong client-side, agency &amp; production company experience. I am a fast learner and very passionate about my work, motivated, resourceful and always looking to learn new and open source technologies and improve my professional career.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://github.com/ptmonline">ptmonline</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://twitter.com/nullarchitect">pau torres</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/in/pau-torres-0109853b">pau torres</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-					if(current && current.nodeName == "SPAN" && (arrowRight || arrowDown)) {
-						var header = e.target.parentNode.parentNode;
-						var item = header.nextSibling;
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Costaisa</span>
+					<span class="date">
+						June 2016 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.costaisa.com">http://www.costaisa.com</a>
+				</div>
+				<div class="position">
+					Senior Front End Developer
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Development of hybrid mobile apps with Angular 2/4.</li>
+					<li class="bullet">Data visualisation of realtime data with D3.</li>
+					<li class="bullet">Development, troubleshooting and addressing browser compatibility issues for various responsives sites.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Klick Health</span>
+					<span class="date">
+						October 2014 — March 2016
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://klick.com">http://klick.com</a>
+				</div>
+				<div class="position">
+					Full Stack Developer
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Development and architecture of Veeva iRep apps for iPad and Windows 8 tablet for various clients. Also worked  on Veeva Approved Emails.</li>
+					<li class="bullet">Created the &#x27;Keymap Generator&#x27;, a small Nodejs tool to convert JSON files into Excel documents used to create Key Messages Map for Veeva apps.</li>
+					<li class="bullet">Development, troubleshooting and addressing browser compatibility issues for various responsives sites (ampyra.com, nesinafamily.com, entyvio.com, contrave.com).</li>
+					<li class="bullet">Building and development of rich media html5 banners.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Klick Health</span>
+					<span class="date">
+						June 2013 — October 2014
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://klick.com">http://klick.com</a>
+				</div>
+				<div class="position">
+					Senior Front End Developer / Team Lead
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Team lead in charge of junior developers, new hires and interns.</li>
+					<li class="bullet">Angular.js developer for Telus mobile app and Biogen website.</li>
+					<li class="bullet">Development and prototyping of data animations and infographics for apps, mobile and desktop websites.</li>
+					<li class="bullet">Front end developement and supervising for sonyrewards.com.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Klick Health</span>
+					<span class="date">
+						October 2011 — June 2013
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://klick.com">http://klick.com</a>
+				</div>
+				<div class="position">
+					Front End Developer
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Front end development, testing and QA response for desktop and mobile sites millennium.com, ampyra-hcp.com, epipen.ca, breakingthroughpain.com, takedaoncology.com, takedahcp.</li>
+					<li class="bullet">Created, supervised and responded to quality assurance department on the development of HTML Emails.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>The Null Architect</span>
+					<span class="date">
+						September 2010 — March 2012
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="not available at this time">not available at this time</a>
+				</div>
+				<div class="position">
+					Front End Developer
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Development and architecture of various sites for Art centers, musicians and record labels</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
 
-						// select the .item element from the siblings
-						while (!item || !item.classList || !item.classList.contains('item')) {
-							item = item.nextSibling;
-						}
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Ryerson Univerity</span>
+					<span class="date">
+						2010-09-15 — 2011-06-07
+					</span>
+				</h4>
+				<div class="area">
+					Web Development
+				</div>
+				<div class="studyType">
+					Certificate
+				</div>
+				<h4>Courses</h4>
+				<ul class="courses">
+					<li>Advanced Javascript</li>
+					<li>HTML5/CSS3</li>
+					<li>PHP/MySQL</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>George Brown</span>
+					<span class="date">
+						2009-09-15 — 2010-10-11
+					</span>
+				</h4>
+				<div class="area">
+					Web Publishing
+				</div>
+				<div class="studyType">
+					Certificate
+				</div>
+				<h4>Courses</h4>
+				<ul class="courses">
+					<li>Internet Publiching</li>
+					<li>HTML/CSS</li>
+					<li>Javascript</li>
+					<li>Photoshop</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="awards" class="row">
+		<aside class="col-sm-3">
+			<h3>Awards</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Website Features - User Experience</span>
+				</h4>
+				<div class="date pull-right">
+					<em>Awarded</em>
+					2015-01-01
+				</div>
+				<div class="awarder">
+					<em>by</em>
+					<strong>Klick Health</strong>
+				</div>
+				<div class="summary">
+					ENTYVIO US Consumer Site
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Outstanding Achievement in web development</span>
+				</h4>
+				<div class="date pull-right">
+					<em>Awarded</em>
+					2012-01-01
+				</div>
+				<div class="awarder">
+					<em>by</em>
+					<strong>Klick Health</strong>
+				</div>
+				<div class="summary">
+					Webaward for Breaking Through Pain website
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Work</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML/HTML5</li>
+					<li>CSS/CSS3</li>
+					<li>Javascript</li>
+					<li>Angular 2</li>
+					<li>Typescript</li>
+					<li>jQuery</li>
+					<li>D3</li>
+					<li>Sass, Less</li>
+					<li>Gulp, Grunt</li>
+					<li>GIT, Tortoise</li>
+					<li>BEM Methodology</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Personal</h4>
+				</div>
+				<ul class="keywords">
+					<li>Node</li>
+					<li>Express</li>
+					<li>Babel</li>
+					<li>SQL (MySQL, PostgreSQL)</li>
+					<li>NoSQL (MongoDb, Redis)</li>
+					<li>Underscore</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
 
-						// hide or show the .item element
-						item.classList.toggle('none');
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Spanish</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Catalan</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Full professional proficiency
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>French</strong>
+				</div>
+				<div class="fluency">
+					Full professional proficiency
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
 
-						// if the .item is going to be shown then imcrease is opacity
-						// every 20 milliseconds to make a fadeIn effect
-						if (!item.classList.contains('none')) {
-							var id = setInterval(function() {
-								item.style.opacity = parseFloat(item.style.opacity) + 0.09;
-								if (parseFloat(item.style.opacity) >= 1) {
-									clearInterval(id);
-								}
-							}, 20);
-						} else {
-							item.style.opacity = 0;
-						}
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Music</h4>
+				</div>
+				<ul class="keywords">
+					<li>Vinyls</li>
+					<li>Record Stores</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Free Internet / Online Privacy</h4>
+				</div>
+				<ul class="keywords">
+					<li>Open Source</li>
+					<li>Electronic Frontier Foundation</li>
+					<li>GNU/Linux</li>
+					<li>PGP</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="references" class="row">
+		<aside class="col-sm-3">
+			<h3>References</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<blockquote class="reference">
+					<p>In terms of performance, Pau is unparalleled.  His work is always of the highest quality and the successful outcome of any project is his pride and his priority.  His technical skills are very strong and diverse as demonstrated by his ability to succeed in a variety of digital technologies including websites (responsive, mobile or otherwise), development and consumption of web services, emails, ad units and a small host of proprietary technologies such as the Veeva platform that he learned and mastered.  Pau is a fluent communicator who is able to work with different teams from different backgrounds and disciplines easily.</p>
+					<p class="name">
+						<strong>— Drew Ashby (Technology Director, Klick Health) / dashby@klick.com</strong>
+					</p>
+				</blockquote>
+			</div>
+			<div class="col-sm-12">
+				<blockquote class="reference">
+					<p>Pau was a valuable asset to Klick Health and rapidly gained a reputation as an individual who could quickly grasp new projects and new frameworks producing quality websites and other digital assets often quicker than was expected. Pau&#x27;s organization skills combined with his ability to understand all aspects of the project at hand meant that during the production phase, multiple departments knew they could rely on his expertise and judgement. In that regard, Pau was a key to the success of the endeavor.</p>
+					<p class="name">
+						<strong>— Mark Donaldson (Sr. Web Developer, Klick Health) / mdonaldson@klick.com</strong>
+					</p>
+				</blockquote>
+			</div>
+			<div class="col-sm-12">
+				<blockquote class="reference">
+					<p>Pau excels as both a member of a development team, and taking initiative himself, and has demonstrated both multiple times. He will do what is necessary to drive a project to completion, and is not afraid to identify areas where better process or improved or altered practice would better serve his colleagues, clients or employer.</p>
+					<p class="name">
+						<strong>— Simon Withers (Vice President, Technology, Klick Health) / swithers@klick.com</strong>
+					</p>
+				</blockquote>
+			</div>
+			</div>
+		</div>
+	</section>
 
-						current.classList.toggle('fa-caret-right');
-						current.classList.toggle('fa-caret-down');
-					}
-
-				}, false);
-
-				// Make the #resume visible only when the DOM is fully loaded
-				elements.style.opacity = '1';
-			})();
-		</script>
+	</div>
+	
 	</body>
-
 </html>

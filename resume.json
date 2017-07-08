@@ -41,11 +41,11 @@
 		"website": "http://www.costaisa.com",
 		"startDate": "June 2016",
 		"highlights": [
-			"Development of hybrid mobile apps with Angular 2.",
+			"Development of hybrid mobile apps with Ionic 2, Angular (version 2 & 4) and Typescript.",
       "Data visualisation of realtime data with D3.",
       "Development, troubleshooting and addressing browser compatibility issues for various responsives sites."
 		],
-		"toolsandtech": "Ionic 2, Angular 2, Typescript, Gulp, Sass, BEM, D3, Bootstrap Grid"
+		"toolsandtech": "Ionic 2, Angular 2, Typescript, Gulp, Sass, BEM, D3, Bootstrap Grid, jQuery, lodash, postal"
 	}, {
 		"company": "Klick Health",
 		"location": {
