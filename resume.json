@@ -41,7 +41,7 @@
 		"website": "http://www.costaisa.com",
 		"startDate": "June 2016",
 		"highlights": [
-			"Development of hybrid mobile apps with Ionic 2, Angular (version 2 & 4) and Typescript.",
+			"Development of hybrid mobile apps with Ionic (2 & 3), Angular (version 2 & 5) and Typescript.",
       "Data visualisation of realtime data with D3.",
       "Development, troubleshooting and addressing browser compatibility issues for various responsives sites."
 		],
@@ -196,13 +196,18 @@
 			"Vinyls",
 			"Record Stores"
 		]
+	},{
+		"name": "Blockchain",
+		"keywords": [
+			"Hyperledger",
+			"Smart Contracts",
+			"Solidity"
+		]
 	}, {
 		"name": "Free Internet / Online Privacy",
 		"keywords": [
 			"Open Source",
-			"Electronic Frontier Foundation",
-			"GNU/Linux",
-			"PGP"
+			"Electronic Frontier Foundation"
 		]
 	}],
 	"references": [{
