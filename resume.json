@@ -5,7 +5,7 @@
 		"picture": "",
 		"email": "ptorresonline@gmail.com",
 		"phone": "(34) 637 664 340",
-		"summary": "I am a Senior Front End developer with 7+ years of experience in all stages of the web/app development lifecycle including requirements analysis, designs, development, verification, deployment and support. Experienced in dynamic responsive sites, hybrid mobile apps, and interactive features that drive business growth and improve UX. Motivated, resourceful and passionate about open source code, data visualization, blockchain ecosystems, and social/local economics.",
+		"summary": "I am a Senior Front End developer with 7+ years of experience in all stages of the web/app development lifecycle including requirements analysis, designs, development, verification, deployment and support. Experienced in dynamic responsive sites, hybrid mobile apps, and interactive features that drive business growth and improve UX. Motivated, resourceful and passionate about open source code, data visualization, blockchain ecosystems, and social/local economics mouvements.",
 		"location": {
 			"address": "Digoine 32",
 			"postalCode": "08901",
@@ -20,10 +20,6 @@
 			"network": "Github",
 			"username": "ptmonline",
 			"url": "http://github.com/ptmonline"
-		}, {
-			"network": "Twitter",
-			"username": "pau torres",
-			"url": "http://twitter.com/nullarchitect"
 		}, {
 			"network": "LinkedIn",
 			"username": "pau torres",
